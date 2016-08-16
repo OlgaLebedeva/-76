@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<title>Я волонтер</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+</head>
+<body>
+	<header>
+    <div class="top-bar">
+      <div class="container main">
+        <div class="row">
+          <div class="col-sm-6 col-xs-4">
+            <div id="logo"><a  href="#"><img src='img/logo.png' title='Я волонтер'></a></div>
+            <div class="social visible-md-block visible-lg-block">
+              <ul class="social-share">
+						    <li><a href="#"><img src="img/instagram.png" height="32" width="32"></a></li>
+						    <li><a href="#"><img src="img/facebook.png" height="32" width="32"></a></li>
+						    <li><a href="#"><img src="img/vk.png" height="32" width="32"></a></li>
+					     </ul>
+					  </div>
+			    </div>
+          <div class="col-sm-6 col-xs-8 ">
+          <!--Auth-->
+            <div class='auth'>
+              <div class="dropdown ">
+                <button class="dropdown-toggle my-btn" data-toggle="dropdown"><b>Вход</b> <span class="caret"></span></button>      
+                <div  class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-md-12" id="login-dp">
+                      <span>Войти с помощью</span>
+                      <div class="social-buttons">
+                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                      </div>
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                          <label class="sr-only" for="exampleInputEmail2">Email</label>
+                          <input type="email" class="form-control email" id="exampleInputEmail2" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="sr-only" for="exampleInputPassword2">Пароль</label>
+                          <input type="password" class="form-control password" id="exampleInputPassword2" placeholder="Password" required>
+                          <div class="help-block text-right"><a href="">Забыли пароль ?</a></div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-block my-btn">Войти</button>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Запомнить меня
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-toggle my-btn" data-toggle="dropdown" onClick='location.href="reg.html"'>Зарегистрироваться </button>
+              </div>
+            </div> <!--auth-->           
+          </div>
+        </div>
+      </div><!--/.container-->
+    </div><!--/.top-bar-->
+    <div class=" main">
+      <nav class="navbar navbar-default  nav-b" role="banner">
+  			  <!--  <div class="container "> -->
+       	<div class="navbar-header">
+         	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         	</button>
+        </div>
+        <div class="collapse navbar-collapse ">
+          <ul class="nav navbar-nav main-menu  ">
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О волонтерстве <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#">Кто такой волонтер</a></li>
+        				<li><a href="#">Направления волонтерской деятельности</a></li>
+        				<li><a href="#">Что дает участие в волонтерском движении</a></li>
+        			</ul></li>
+        		<li><a href="#">Как стать волонтером?</a></li>
+        		<li><a href="#">Важно знать волонтеру</a></li>
+        		<li><a href="#">Фото</a></li>
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Документы <span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+        					<li><a href="#">Порядок организации работы<br>по вовлечению мололдых граждан<br>в волонтерскую деятельность<br>на территории ЯО</a></li>
+         					<li><a href="#">Памятка для организаций,<br>привлекающих к деятельности<br>волонтеров</a></li>
+         					<li><a href="#">Что дает учатие в волонтерском<br>движении?</a></li>
+        				</ul>
+        			</li>
+        			<li><a href="#">Контакты</a></li>
+      			</ul>
+          </div>
+        </nav><!--/nav-->
+      </div>
+    </header>
+
+	
+<section>
+<!--Search-->
+  <div class="container main">
+    <div class="row"> 
+      <div class="col-md-4 col-sm-6 col-xs-12 hidden-xs hidden-sm"><div >
+        <button type="button" class="btn my-btn2">Предложить вакансию для волонтера</button></div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 hidden-xs hidden-sm fb-btn"><div>
+        <button type="button" class="btn my-btn2">Оставить отзыв после мероприятия</button></div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+      <div class="input-group search">
+        <input type="text" class="form-control" placeholder="Поиск" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2"><input type="submit" value=""></span>
+      </div>
+    </div>
+  </div>
+</div>                  
+<!--End search -->
+
+<!--Slider-->
+<div class="container ">
+  <div class="row otstup main">  
+    <div class="col-md-12 hidden-xs hidden-sm">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Маркеры слайдов -->
+         <!--
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+         -->
+         <!-- Содержимое слайдов -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/slide1.jpg" alt="...">
+                <div class="carousel-caption">
+                  <h3>Заголовок слайда</h3>
+                    <p>Описание слайда</p>
+                </div>
+              </div>
+              <!-- 
+              <div class="item">
+                <img src="images/slider/2.jpg" alt="...">
+                <div class="carousel-caption">
+                  <h3>Осень</h3>
+                  <p>Осень — это вторая весна, когда каждый лист — цветок.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/slider/3.jpg" alt="...">
+                <div class="carousel-caption">
+                  <h3>Дождь</h3>
+                  <p>Осень опять идут дожди...</p>
+                </div>
+                </div>
+              </div>
+              -->
+              <!-- Controls -->
+            <a class="left carousel-control  sl-cntrl" href="#carousel-example-generic" data-slide="prev">
+              <img src='img/prev.png'>
+            </a>
+            <a class="right carousel-control sl-cntrl" href="#carousel-example-generic" data-slide="next">
+              <img src='img/next.png'>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--End slider-->
+
+<!--Content-->
+ <div class="container main">
+    <div class="row">
+      <div class="col-md-8  col-xs-12 ">
+        <div class="content">
+         <div><button type="button" class="btn btn-default my-btn main-cont">Новости</button></div>
+           <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   Текст новости
+            </div>
+          </div>
+          <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   ...
+            </div>
+          </div>
+          <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+      <div class="content">
+        <div><button type="button" class="btn btn-default my-btn main-cont ">Вакансии</button></div>
+          <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   ...
+            </div>
+          </div>
+          <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   ...
+            </div>
+          </div>
+          <div class="media otstup2">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="img/news1.jpg" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+                   ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End content-->
+</section>
+
+<footer>
+	<div class="f-line"></div>
+	<div class=" main-f">
+	  <div class="main">
+    	<div class="container main">
+        <div class="row">
+          <div class="col-sm-6 col-xs-4 visible-md-block visible-lg-block">
+          	<ul class="unstyled">
+			        <li><a href='#'>О волонтерстве</a></li>
+			        <li><a href='#'>Как стать волонтером</a></li>
+			        <li><a href='#'>Важно знать волонтеру</a></li>
+			        <li><a href='#'>Документы</a></li>
+			        <li><a href='#'>Контакты</a></li>
+		        </ul>
+          </div>
+          <div class="col-sm-6 col-xs-8">
+ 	          <div class="social">
+                <ul >
+						      <li><a href="#"><img src="img/instagram-f.png" height="32" width="32"></a></li>
+						      <li><a href="#"><img src="img/facebook-f.png" height="32" width="32"></a></li>
+						      <li><a href="#"><img src="img/vk-f.png" height="32" width="32"></a></li>
+					      </ul>
+					    </div>
+            </div>
+          </div>
+        </div>
+    	</div>	
+	  </div>
+  </footer>
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

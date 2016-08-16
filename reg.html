@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <title>Я волонтер</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="container main">
+        <div class="row">
+          <div class="col-sm-6 col-xs-4">
+            <div id="logo"><a  href="index.html"><img src='img/logo.png' title='Я волонтер'></a></div>
+              <div class="social visible-md-block visible-lg-block">
+                <ul class="social-share">
+                  <li><a href="#"><img src="img/instagram.png" height="32" width="32"></a></li>
+                  <li><a href="#"><img src="img/facebook.png" height="32" width="32"></a></li>
+                  <li><a href="#"><img src="img/vk.png" height="32" width="32"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-8 ">
+            <!--Auth-->
+            <div class='auth'>
+              <div class="dropdown ">
+                <button class="dropdown-toggle my-btn" data-toggle="dropdown"><b>Вход</b> <span class="caret"></span></button>      
+                  <div  class="dropdown-menu">
+                    <div class="row">
+                      <div class="col-md-12" id="login-dp">
+                        <span>Войти с помощью</span>
+                          <div class="social-buttons">
+                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                          </div>
+                          <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputEmail2">Email</label>
+                              <input type="email" class="form-control email" id="exampleInputEmail2" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputPassword2">Пароль</label>
+                              <input type="password" class="form-control password" id="exampleInputPassword2" placeholder="Password" required>
+                              <div class="help-block text-right"><a href="">Забыли пароль ?</a></div>
+                            </div>
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-primary btn-block my-btn">Войти</button>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Запомнить меня
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle my-btn" data-toggle="dropdown" onClick='location.href="reg.html"'>Зарегистрироваться </button>
+                  </div>
+                </div> <!--auth-->           
+              </div>
+            </div>
+          </div><!--/.container-->
+        </div><!--/.top-bar-->
+        <div class=" main">
+          <nav class="navbar navbar-default  nav-b" role="banner">
+          <!--  <div class="container "> -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse ">
+                <ul class="nav navbar-nav main-menu  ">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О волонтерстве <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Кто такой волонтер</a></li>
+                        <li><a href="#">Направления волонтерской деятельности</a></li>
+                        <li><a href="#">Что дает участие в волонтерском движении</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Как стать волонтером?</a></li>
+                    <li><a href="#">Важно знать волонтеру</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Документы <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                        <li><a href="#">Порядок организации работы<br>по вовлечению мололдых граждан<br>в волонтерскую деятельность<br>на территории ЯО</a></li>
+                        <li><a href="#">Памятка для организаций,<br>привлекающих к деятельности<br>волонтеров</a></li>
+                        <li><a href="#">Что дает учатие в волонтерском<br>движении?</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </nav><!--/nav-->
+            </div>
+          </header>
+
+
+
+
+      
+      <div class="main">        
+        <form class="form-horizontal">
+          <h2>Регистрация</h2>
+          <div class="form-group">
+            <label class="control-label col-xs-3" for="lastName">Фамилия:</label>
+            <div class="col-xs-9">
+              <input type="text" class="form-control" id="lastName" placeholder="Введите фамилию">
+            </div>
+          </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="firstName">Имя:</label>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" id="firstName" placeholder="Введите имя">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="fatherName">Отчество:</label>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" id="fatherName" placeholder="Введите отчество">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3">Дата рождения:</label>
+          <div class="col-xs-3">
+            <select class="form-control">
+              <option>Дата</option>
+            </select>
+          </div>
+          <div class="col-xs-3">
+            <select class="form-control">
+              <option>Месяц</option>
+            </select>
+          </div>
+          <div class="col-xs-3">
+            <select class="form-control">
+              <option>Год</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="inputEmail">Email:</label>
+          <div class="col-xs-9">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="inputPassword">Пароль:</label>
+          <div class="col-xs-9">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Введите пароль">
+          </div>  
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="confirmPassword">Подтвердите пароль:</label>
+          <div class="col-xs-9">
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Введите пароль ещё раз">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="phoneNumber">Телефон:</label>
+          <div class="col-xs-9">
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Введите номер телефона">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3" for="postalAddress">Адрес:</label>
+          <div class="col-xs-9">
+            <textarea rows="3" class="form-control" id="postalAddress" placeholder="Введите адрес"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-3">Пол:</label>
+          <div class="col-xs-2">
+            <label class="radio-inline">
+              <input type="radio" name="genderRadios" value="male"> Мужской
+            </label>
+          </div>
+          <div class="col-xs-2">
+            <label class="radio-inline">
+              <input type="radio" name="genderRadios" value="female"> Женский
+            </label>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <div class="col-xs-offset-3 col-xs-9">
+            <input type="reset" class="btn my-btn2" value="Очистить форму">
+            <button type="button" class="btn my-btn">Сохранить изменения</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+
+
+
+<footer>
+  <div class="f-line"></div>
+    <div class=" main-f">
+      <div class="main">
+        <div class="container main">
+          <div class="row">
+            <div class="col-sm-6 col-xs-4 visible-md-block visible-lg-block">
+              <ul class="unstyled">
+                <li><a href='#'>О волонтерстве</a></li>
+                <li><a href='#'>Как стать волонтером</a></li>
+                <li><a href='#'>Важно знать волонтеру</a></li>
+                <li><a href='#'>Документы</a></li>
+                <li><a href='#'>Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-8">
+              <div class="social">
+                <ul >
+                  <li><a href="#"><img src="img/instagram-f.png" height="32" width="32"></a></li>
+                  <li><a href="#"><img src="img/facebook-f.png" height="32" width="32"></a></li>
+                  <li><a href="#"><img src="img/vk-f.png" height="32" width="32"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+</footer>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
